@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Coordinated View Code Challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="openseadragron/openseadragon.min.js" type="text/javascript"></script>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .viewers {
+            width: 35%;
+            height: 450px;
+        }
+
+        #viewer1,
+        #viewer2{
+            width: 100%;
+            height: 100%;
+        }
+
+        #settings {
+            width: 200px;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div>
+        <div class="text-center p-2 bg-info text-white">
+            <h2 class="h2 mb-0">
+                Coordinated View Code Challenge
+            </h2>
+            <h6 class="h6">
+                By Vikas Gola
+            </h6>
+        </div>
+
+        <div class="float-right bg-light" id="settings">
+            <h5 class="bg-success h4 text-white p-2 text-center mb-0">
+                Configuration
+            </h5>
+            <div class="input-group border">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <input id="synccheckbox" type="checkbox" aria-label="Sync viewports">
+                    </div>
+                </div>
+                <label class="p-1 pl-3" aria-label="Text input with checkbox">Sync</label>
+            </div>
+        </div>
+
+        <div class="pt-4 ml-4">
+            <div class="d-inline-block viewers">
+                <div id="viewer1" class="border border-dark rounded rounded-lg mr-2"></div>
+                <p class="text-center">Viewport 1</p>
+            </div>
+            <div class="d-inline-block viewers">
+                <div id="viewer2" class="border border-dark rounded rounded-lg ml-2"></div>
+                <p class="text-center">Viewport 2</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
