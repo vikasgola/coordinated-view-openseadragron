@@ -1,2 +1,2 @@
-# coordinated-view-code-challenge
-This is a repo for code challenge of Cross-Slide Coordinated Viewing project at camicroscope.
+# coordinated-view-openseadragon
+This is openseadragon example of two views coordinated with each other.

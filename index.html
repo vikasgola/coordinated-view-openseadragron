@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Coordinated View Code Challenge</title>
-    
+    <title>Coordinated View Openseadragron</title>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -42,28 +42,37 @@
     <div>
         <div class="text-center p-2 bg-info text-white">
             <h2 class="h2 mb-0">
-                Coordinated View Code Challenge
+                Coordinated View Openseadragon
             </h2>
             <h6 class="h6">
                 By Vikas Gola
             </h6>
         </div>
 
-        <div class="float-right bg-light" id="settings">
-            <h5 class="bg-success h4 text-white p-2 text-center mb-0">
-                Configurations
-            </h5>
-            <div class="input-group border">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">
-                        <input id="synccheckbox" type="checkbox" aria-label="Sync viewports">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group border">
+                        <input type="text" id="image-url" class="form-control" placeholder="Enter image URL">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" id="load-url">Load URL</button>
+                        </div>
                     </div>
                 </div>
-                <label class="p-1 pl-3" aria-label="Text input with checkbox">Sync Viewports</label>
+                <div class="col-md-6">
+                    <div class="input-group border">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input id="synccheckbox" type="checkbox" aria-label="Sync viewports">
+                            </div>
+                        </div>
+                        <label class="p-1 pl-3" aria-label="Text input with checkbox">Sync Viewports</label>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="pt-4 ml-4">
+        <div class="d-flex justify-content-center pt-4">
             <div class="d-inline-block viewers mr-2">
                 <div class="btn-group mb-1">
                     <button class="btn btn-secondary btn-sm" id="zoom-in1">Zoom In</button>
